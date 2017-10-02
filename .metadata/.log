@@ -355,3 +355,27 @@ Caused by: java.lang.IllegalArgumentException:
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-10-01 19:08:33.560
 !MESSAGE Indexed 'Labo 2' (3 sources, 8 headers) in 0,982 sec: 1 139 declarations; 2 246 references; 0 unresolved inclusions; 22 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-10-01 19:23:46.686
+!MESSAGE Indexed 'Scheduler' (3 sources, 0 headers) in 0,185 sec: 135 declarations; 134 references; 4 unresolved inclusions; 0 syntax errors; 123 unresolved names (31 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-10-01 19:23:49.401
+!MESSAGE Indexed 'Scheduler' (3 sources, 19 headers) in 1,64 sec: 1 201 declarations; 2 745 references; 1 unresolved inclusions; 25 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.core.resources 4 1 2017-10-01 19:24:18.545
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-10-01 19:24:18.545
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:977)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:960)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1594)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:163)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Contains: The project description file (.project) for 'Scheduler' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2017-10-01 19:24:18.547
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2017-10-01 19:24:18.547
+!MESSAGE The project description file (.project) for 'Scheduler' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.

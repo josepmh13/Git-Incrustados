@@ -1,9 +1,9 @@
 /*
  * -> Universidad de Costa Rica
  * -> Escuela de Ingenieria Electrica
- * -> IE -1119 Laboratorio de Programacion de Sistemas Incrustados
+ * -> IE - 1119 Laboratorio de Programacion de Sistemas Incrustados
  * -> Estudiantes: Luisa Quesada Camacho [B35427], Jose Martinez Hernandez [B34024]
- * -> Laboratorio 2 : Introduccion a la Tarjeta de Desarrollo
+ * -> Laboratorio 2 : Sistema en Tiempo Real
  */
 
 #include <ti/devices/msp432p4xx/inc/msp.h>

@@ -1,0 +1,45 @@
+
+**** Clean-only build of configuration Debug for project IMU ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 clean -O 
+DEL /F  "Clase 4.hex"  "Clase 4.out" 
+DEL /F "adcexample.o" "startup_msp432p401r_gcc.o" "system_msp432p401r.o" 
+DEL /F "startup_msp432p401r_gcc.d" "system_msp432p401r.d" 
+DEL /F "adcexample.d" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project IMU ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../startup_msp432p401r_gcc.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__MSP432P401R__ -Dgcc -I"C:/ti/ccsv7/ccs_base/arm/include" -I"C:/ti/ccsv7/ccs_base/arm/include/CMSIS" -I"D:/gitIncrustados/IMU" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"startup_msp432p401r_gcc.d" -MT"startup_msp432p401r_gcc.o" -o"startup_msp432p401r_gcc.o"  "../startup_msp432p401r_gcc.c"
+'Finished building: ../startup_msp432p401r_gcc.c'
+' '
+'Building file: ../system_msp432p401r.c'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__MSP432P401R__ -Dgcc -I"C:/ti/ccsv7/ccs_base/arm/include" -I"C:/ti/ccsv7/ccs_base/arm/include/CMSIS" -I"D:/gitIncrustados/IMU" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"system_msp432p401r.d" -MT"system_msp432p401r.o" -o"system_msp432p401r.o"  "../system_msp432p401r.c"
+'Finished building: ../system_msp432p401r.c'
+' '
+'Building file: ../adcexample.cpp'
+'Invoking: GNU Compiler'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -D__MSP432P401R__ -Dgcc -I"C:/ti/ccsv7/ccs_base/arm/include" -I"C:/ti/ccsv7/ccs_base/arm/include/CMSIS" -I"D:/gitIncrustados/IMU" -I"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/arm-none-eabi/include" -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"adcexample.d" -MT"adcexample.o" -o"adcexample.o"  "../adcexample.cpp"
+'Finished building: ../adcexample.cpp'
+' '
+'Building target: IMU.out'
+'Invoking: GNU Linker'
+"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-6-2017-q1-update/bin/arm-none-eabi-gcc.exe" -D__MSP432P401R__ -Dgcc -g -gdwarf-3 -gstrict-dwarf -Wall -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"IMU.map" -mthumb -g -gstrict-dwarf -Wall -o"IMU.out" "./adcexample.o" "./startup_msp432p401r_gcc.o" "./system_msp432p401r.o" -Wl,-T"../msp432p401r.lds"  -Wl,--start-group -lgcc -lnosys -lc -Wl,--end-group 
+'Finished building target: IMU.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project IMU ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: 'IMU.out' is up to date.
+
+**** Build Finished ****

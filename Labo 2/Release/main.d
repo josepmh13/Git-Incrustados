@@ -44,16 +44,13 @@ main.obj: C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/devices/msp432p4xx/dr
 main.obj: C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/grlib/grlib.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/assert.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/linkage.h
-main.obj: ../HAL_I2C.h
-main.obj: ../HAL_OPT3001.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/stdio.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/stdarg.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/stdlib.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/math.h
 main.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/_defs.h
-main.obj: ../setup.h
-main.obj: ../handler.h
-main.obj: ../functions.h
+main.obj: ../LcdDriver/Crystalfontz128x128_ST7735.h
+main.obj: C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/grlib/grlib.h
 
 ../main.cpp: 
 C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/devices/msp432p4xx/inc/msp.h: 
@@ -99,13 +96,10 @@ C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/devices/msp432p4xx/driverlib/fl
 C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/grlib/grlib.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/assert.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/linkage.h: 
-../HAL_I2C.h: 
-../HAL_OPT3001.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/stdio.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/stdarg.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/stdlib.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/math.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include/_defs.h: 
-../setup.h: 
-../handler.h: 
-../functions.h: 
+../LcdDriver/Crystalfontz128x128_ST7735.h: 
+C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/grlib/grlib.h: 

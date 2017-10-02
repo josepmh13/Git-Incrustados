@@ -79,5 +79,6 @@ void ADC14_IRQHandler(void)
     ADC14->CLRIFGR0 = ADC14_CLRIFGR0_CLRIFG0 | ADC14_CLRIFGR0_CLRIFG1 | ADC14_CLRIFGR0_CLRIFG2 | ADC14_CLRIFGR0_CLRIFG3  ;
     __enable_irq();
     return;
+    int test = 0U;
 }
 }

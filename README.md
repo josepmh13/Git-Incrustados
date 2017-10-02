@@ -1,3 +1,1 @@
-Authors:
-        Luisa Quesada Camacho
-        Jose Martinez Hernandez
+Authors: Luisa Quesada Camacho, Jose Martinez Hernandez

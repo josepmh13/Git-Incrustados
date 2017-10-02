@@ -1,6 +1,6 @@
 #define __unsigned_chars__ 1	/* Predefined */
 #define __DATE__ "Oct  1 2017"	/* Predefined */
-#define __TIME__ "19:08:34"	/* Predefined */
+#define __TIME__ "19:20:49"	/* Predefined */
 #define __STDC__ 1	/* Predefined */
 #define __STDC_VERSION__ 199409L	/* Predefined */
 #define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
@@ -36,4 +36,4 @@
 #define __TI_STRICT_FP_MODE__ 1	/* Predefined */
 #define _OPTIMIZE_FOR_SPACE 1
 #define __MSP432P401R__ 1
-#define ccs 1
+#define DeviceFamily_MSP432P401x 1

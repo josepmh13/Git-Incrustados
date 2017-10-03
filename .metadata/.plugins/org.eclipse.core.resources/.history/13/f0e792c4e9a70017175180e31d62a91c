@@ -7,7 +7,6 @@ uint16_t ADC14Resultx = 0U;
 uint16_t ADC14Resulty = 0U;
 uint16_t ADC14Resultz = 0U;
 
-//Otro comentario
 int main(void)
 {
     //uint32_t csregister = 0x0;

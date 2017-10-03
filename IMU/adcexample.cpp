@@ -16,17 +16,9 @@ int main(void)
     // Set P4.3 for Analog input, disabling the I/O circuit.
     P4->SEL0 = BIT3;
     P4->SEL1 = BIT3;
-    P4->DIR &= ~BIT3;
-
-    P1->DIR = BIT0;
-    P1->OUT = BIT0;
-    // Set P4.3 for Analog input, disabling the I/O circuit.
-    P4->SEL0 = BIT3;
-    P4->SEL1 = BIT3;
-    P4->DIR &= ~BIT3;
+    P4->DIR &= ~BIT3;;
 
     /* Configures Pin 4.0, 4.2, and 6.1 as ADC input */
-    // Set P4.3 for Analog input, disabling the I/O circuit.
     P4->SEL0 = BIT0;
     P4->SEL1 = BIT0;
     P4->DIR &= ~BIT0;

@@ -12,16 +12,13 @@ CMD_SRCS += \
 ../msp432p401r.cmd 
 
 C_SRCS += \
-../startup_msp432p401r_ccs.c \
 ../system_msp432p401r.c 
 
 C_DEPS += \
-./startup_msp432p401r_ccs.d \
 ./system_msp432p401r.d 
 
 OBJS += \
 ./main.obj \
-./startup_msp432p401r_ccs.obj \
 ./system_msp432p401r.obj 
 
 CPP_DEPS += \
@@ -29,11 +26,9 @@ CPP_DEPS += \
 
 OBJS__QUOTED += \
 "main.obj" \
-"startup_msp432p401r_ccs.obj" \
 "system_msp432p401r.obj" 
 
 C_DEPS__QUOTED += \
-"startup_msp432p401r_ccs.d" \
 "system_msp432p401r.d" 
 
 CPP_DEPS__QUOTED += \
@@ -43,7 +38,6 @@ CPP_SRCS__QUOTED += \
 "../main.cpp" 
 
 C_SRCS__QUOTED += \
-"../startup_msp432p401r_ccs.c" \
 "../system_msp432p401r.c" 
 
 

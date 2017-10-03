@@ -1,6 +1,6 @@
 #include "msp.h"
 
-//Luisa prueba prueba
+//Luisa prueba
 
 uint16_t ADC14Result = 0U;
 uint16_t ADC14Resultx = 0U;

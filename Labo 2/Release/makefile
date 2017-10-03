@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS
+CG_TOOL_ROOT := C:/ti/ccs720/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -170,11 +170,6 @@ ORDERED_OBJS += \
 "./fonts/fontfixed6x8.obj" \
 "../msp432p401r.cmd" \
 $(GEN_CMDS__FLAG) \
--l"C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/grlib/ccs/grlib.lib" \
--l"C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/display/lib/display.aem4f" \
--l"C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/drivers/lib/drivers_msp432p401x.aem4f" \
--l"C:/ti/simplelink_msp432_sdk_1_40_01_00/source/third_party/fatfs/lib/fatfs.aem4f" \
--l"C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib" \
 -llibc.a \
 
 -include ../makefile.init
@@ -288,33 +283,33 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-Labo\ 2.out \
+boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.out \
 
 EXE_OUTPUTS__QUOTED += \
-"Labo 2.out" \
+"boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.out" \
 
 BIN_OUTPUTS += \
-Labo\ 2.hex \
+boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.hex \
 
 BIN_OUTPUTS__QUOTED += \
-"Labo 2.hex" \
+"boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.hex" \
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "Labo 2.out"
+	@$(MAKE) --no-print-directory -Onone "boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.out"
 
 # Tool invocations
-Labo\ 2.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP432 Linker'
-	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --advice:power=none --define=__MSP432P401R__ --define=DeviceFamily_MSP432P401x -g --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on -z -m"Labo 2.map" --stack_size=512 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Labo 2_linkInfo.xml" --rom_model -o "Labo 2.out" $(ORDERED_OBJS)
+	"C:/ti/ccs720/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --advice:power=all --define=__MSP432P401R__ --define=ccs --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.map" --heap_size=1024 --stack_size=512 -i"C:/ti/ccs720/ccsv7/ccs_base/arm/include" -i"C:/ti/ccs720/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/lib" -i"C:/ti/ccs720/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs_linkInfo.xml" --rom_model -o "boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-Labo\ 2.hex: $(EXE_OUTPUTS)
+boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.hex: $(EXE_OUTPUTS)
 	@echo 'Invoking: MSP432 Hex Utility'
-	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/bin/armhex"  -o "Labo 2.hex" $(EXE_OUTPUTS__QUOTED)
+	"C:/ti/ccs720/ccsv7/tools/compiler/ti-cgt-arm_16.9.4.LTS/bin/armhex" --memwidth=8 --romwidth=8 -o "boostxl_edumkii_lightsensor_msp432p401r_MSP_EXP432P401R_nortos_ccs.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $@'
 	@echo ' '
 

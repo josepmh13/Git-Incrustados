@@ -1,17 +1,10 @@
-/*
- * -> Universidad de Costa Rica
- * -> Escuela de Ingenieria Electrica
- * -> IE - 1119 Laboratorio de Programacion de Sistemas Incrustados
- * -> Estudiantes: Luisa Quesada Camacho [B35427], Jose Martinez Hernandez [B34024]
- * -> Laboratorio 2 : Sistema en Tiempo Real
- */
-
 #include <ti/devices/msp432p4xx/inc/msp.h>
 #include <C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/devices/msp432p4xx/driverlib/driverlib.h>
 #include <C:/ti/simplelink_msp432_sdk_1_40_01_00/source/ti/grlib/grlib.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h"
 #include "LcdDriver/Crystalfontz128x128_ST7735.h"
 
 /* Graphic library context */
@@ -100,6 +93,8 @@ int main(void)
     MAP_ADC14_enableConversion();
     MAP_ADC14_toggleConversionTrigger();
 
+    drawAccelData();
+
     while(1)
     {
         MAP_PCM_gotoLPM0();
@@ -122,11 +117,34 @@ void drawTitle()
     drawAccelData();
 }
 
+void drawAccelData()
+{
+    HAL_LCD_writeCommand(CM_RAMWR);
+    int i;
+    for (i = 0; i < 512; i++)
+    {
+        HAL_LCD_writeData(0x36);
+ //light blue
+        HAL_LCD_writeData(0x36);
+    }
+    int j;
+    for (j = 512; j < 16384; j++)
+    {
+        HAL_LCD_writeData(0XAA);
+//brown
+        HAL_LCD_writeData(0XAA);
+    }
+
+    HAL_LCD_delay(10);
+    HAL_LCD_writeCommand(CM_DISPON);
+
+}
+
 
 /*
  * Redraw accelerometer data
  */
-void drawAccelData()
+/*void drawAccelData()
 {
     char string[10];
     sprintf(string, "X: %5d", resultsBuffer[0]);
@@ -154,11 +172,12 @@ void drawAccelData()
                                     OPAQUE_TEXT);
 
 }
-
+*/
 
 /* This interrupt is fired whenever a conversion is completed and placed in
  * ADC_MEM2. This signals the end of conversion and the results array is
  * grabbed and placed in resultsBuffer */
+
 void ADC14_IRQHandler(void)
 {
     uint64_t status;
@@ -214,4 +233,3 @@ void ADC14_IRQHandler(void)
             drawAccelData();
     }
 }
-

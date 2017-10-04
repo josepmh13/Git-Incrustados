@@ -1,2 +1,3 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\# WARNING\: head commit changed in the meantime&\#x0A;&\#x0A;&\#x0A;&\#x0A;Scheduler</message>\r\n<message>jkh,hj</message>\r\n</messages>
+BranchProjectTracker__C\:\\Users\\Usuario\\Documents\\GitHub\\gitIncrustados\\.git_Luisa=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects branch\="Luisa">\r\n<project>\\IMU</project>\r\n<project>\\Labo 2</project>\r\n<project>\\RemoteSystemsTempFiles</project>\r\n<project>\\Scheduler</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>Cambio</message>\r\n<message>\# WARNING\: head commit changed in the meantime&\#x0A;&\#x0A;&\#x0A;&\#x0A;Scheduler</message>\r\n<message>jkh,hj</message>\r\n</messages>
 eclipse.preferences.version=1
